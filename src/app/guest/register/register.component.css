@@ -1,0 +1,48 @@
+.custom-card {
+    width: 350px;
+    max-width: 100%;
+    background-color: rgba(255, 255, 255, 0.579);
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #d1dfdf;
+}
+.form-container{
+    color: rgba(4, 7, 63, 0.847);
+    font-size: 17px;
+}
+.box-area{
+    width: 930px;
+}
+.right-box{
+    padding: 40px 30px 40px 40px;
+}
+::placeholder{
+    font-size: 16px;
+}
+.rounded-4{
+    border-radius: 20px;
+}
+.rounded-5{
+    border-radius: 30px;
+}
+@media only screen and (max-width: 768px){
+     .box-area{
+        margin: 0 10px;
+     }
+     .left-box{
+        height: 100px;
+        overflow: hidden;
+     }
+     .right-box{
+        padding: 20px;
+     }
+}
+.form-container img{
+    width: 120px;
+    margin-left: 120px;
+}
+.btn-success{
+    background-color: rgba(92, 14, 166, 0.633);
+}

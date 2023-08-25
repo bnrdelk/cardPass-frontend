@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded-2 p-3 bg-white shadow box-area">
+          <div class="col-md-6 right-box">
+            <div class="row align-items-center">
+                <div class="header-text mb-4">
+                    <h2>{{currentUser.name}}'s Profile</h2>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                    <div class="modal-header">
+                    </div>
+            
+                    <div class="modal-body">
+                        <table>
+                          <tr>
+                            <td><strong>Card ID: </strong></td>
+                            <td>{{ currentUser.id }}</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Employee ID: </strong></td>
+                            <td>{{ currentUser.id }}</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Email Address: </strong></td>
+                            <td> <a href="mailto:{{ currentUser.mail }}">{{ currentUser.mail }}</a>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td><strong>Role: </strong></td>
+                            <td>{{ currentUser.role }}</td>
+                          </tr>
+                          <tr>
+                            <td><strong>Registration Time: </strong></td>
+                            <td>{{ currentUser.registrationTime }}</td>
+                          </tr>
+                        </table>
+                      </div>
+            
+                    <div class="modal-footer">
+                      <button class="btn btn-outline-success" >Edit</button>
+                    </div>
+                </div>
+            </div> 
+
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #a0588ece;">
+               
+                <p class="text-white fs-3" ><span style="color: rgb(255, 255, 255);">customize your profile,</span><span style="color: rgb(26, 241, 237);"> do not forget to save the changes.</span></p>
+                <small class="text-white text-wrap text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </small>
+            </div> 
+        </div>
+        
+    </div>
+    
+</body>
+</html>

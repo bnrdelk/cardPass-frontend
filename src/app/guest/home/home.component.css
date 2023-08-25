@@ -1,0 +1,90 @@
+.slide-container {
+    min-width: 800px;
+  }
+  .about-container {
+    margin-bottom: 50px;
+    min-height: 580px; 
+    background-color: rgba(22, 187, 205, 0.152);
+  }
+  .container1{
+    min-width: 20px;
+    min-height: 370px;
+    margin-top: 50px;
+    margin-left: 80px;
+    border-radius: 2px;
+    background-color: rgba(30, 81, 210, 0.825);
+    box-shadow: black;
+  }
+  .container2{
+    min-width: 20px;
+    min-height: 370px;
+    margin-top: 50px;
+    border-radius: 2px;
+    background-color:rgba(73, 62, 79, 0.362) ;
+    box-shadow: black;
+  }
+  .container3{
+    border-radius: 10px;
+    min-width: 20px;
+    min-height: 370px;
+    margin-top: 50px;
+    border-radius: 2px;
+    background-color:rgb(115, 101, 122) ;
+    box-shadow: black;
+    margin-right: 80px;
+  }
+  h3{
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+    padding: 55px;
+  }
+.i1{
+  max-height: 300px;
+}
+  .carousel-caption {
+    padding: 15px;
+    color: #fff;
+  }
+  .carousel-caption h5{
+    font-weight: 600;
+    font-size: 70px;
+  }
+  .carousel-caption p {
+    font-size: 30px;
+  }
+.i2{
+  max-height: 300px;
+}
+.i3{
+  max-height: 300px;
+}
+p{
+  font-family: 'Poppins', sans-serif;
+  color: rgb(187, 186, 186);
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto; 
+    padding: 20px; 
+  }
+.card3{
+background-color: aqua;
+width: 100%;
+}
+  .abouth3{
+    color: #fff;
+    font-size: 40px;
+  }
+  .map-about{
+    margin-right: 40px;
+  }
+  .map-container{
+    margin-left: 40px;
+    margin-bottom: 40px;
+  }
+  h4{
+    padding: 10px;
+    font-size: 35px;
+  }

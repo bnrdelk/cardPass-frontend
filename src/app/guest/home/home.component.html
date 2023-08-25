@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Page Title</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Poppins:wght@300;600&family=Satisfy&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <style>
+    .scrolling-text {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+    .scrolling-text p {
+      display: inline-block;
+      font-size: 20px;
+      animation: marquee 12s linear infinite;
+    }
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    // Add a script to initialize wow.js after the DOM is loaded
+    document.addEventListener("DOMContentLoaded", function() {
+      new WOW().init();
+    });
+  </script>
+</head>
+<body>
+
+  <script>
+    $(document).ready(function () {
+      $('.scrolling-text p').css('animation-duration', '10s');
+    });
+  </script>
+  <div class="slide-container">
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active i2">
+          <img src="assets/giphy.gif" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block wow animate__animated animate__fadeInUp slow">
+            <h5>Search&Find</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="carousel-item i3">
+          <img src="assets/fig2.gif" class="d-block w-100 " alt="...">
+          <div class="carousel-caption d-none d-md-block wow animate__animated animate__fadeInUp slow">
+            <h5>Communicate</h5>
+            <p>Amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+    
+  <div class="container mt-1">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="scrolling-text">
+          <p>Welcome to the cardPass, explore the site.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="about-container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="container1 justify-content-between wow animate__animated animate__fadeInLeft slower">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <h3 class="abouth3"><span style="color: rgb(255, 255, 255);">about the cardPass,</span><span style="color: rgb(161, 159, 159);"> discover below</span></h3>
+  
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  How to use?
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  What can we do here?
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Contact us
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus tenetur cum magnam maiores, voluptate voluptatum iste iusto pariatur explicabo nisi.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="container2 wow animate__animated animate__fadeInUp slower">
+          <h3 class="abouth3"><span style="color: rgba(51, 114, 17, 0.719);">create your account easily, customize by yourself </span><span style="color: rgb(245, 243, 243);"> sign up right now.</span></h3>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="container3 wow animate__animated animate__fadeInRight slower">
+          <h3 class="abouth3"><span style="color: rgba(221, 196, 114, 0.719);">delete, change and list.</span><span style="color: rgb(198, 231, 169);"> sign up as admin.</span></h3>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+      <div class="row">
+          <div class="col-md-6">
+              <div class="map-container">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d391772.10829454026!2d32.43311671621017!3d39.90290987907349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d347d520732db1%3A0xbdc57b0c0842b8d!2sAnkara!5e0!3m2!1str!2str!4v1690626811385!5m2!1str!2str" width="500" height="370" style="border: 6px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+          </div>
+  
+          <div class="col-md-6">
+              <div class="map-container">
+                <br>
+                <br>
+                <br>
+                  <p>phone: +90 555 555 55 55</p> 
+                  <br>
+                  <p>email addres:  <a href="mailto:">@icloud.com</a></p>
+                  <br>
+                  <p>addres: Ankara/ANKARA Turkey </p>
+              </div>
+          </div>
+      </div>
+  
+  </body>
+  </html>
+  

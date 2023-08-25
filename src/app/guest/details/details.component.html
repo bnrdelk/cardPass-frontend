@@ -1,0 +1,47 @@
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  
+<div class="modal fade" id="detailsModal" tabIndex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form #f="ngForm" (ngSubmit)="f.form.valid">
+
+        <div class="modal-header">
+          <h5 class="modal-title">{{card.employee?.name}} {{card.employee?.surname}}'s Details</h5>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+            <table>
+              <tr>
+                <td><strong>Card ID: </strong></td>
+                <td>{{ card.id }}</td>
+              </tr>
+              <tr>
+                <td><strong>Employee ID: </strong></td>
+                <td>{{ card.employee?.id }}</td>
+              </tr>
+              <tr>
+                <td><strong>Email Address: </strong></td>
+                <td> <a href="mailto:{{ card.employee?.mail }}">{{ card.employee?.mail }}</a>
+                </td>
+              </tr>
+              <tr>
+                <td><strong>Role: </strong></td>
+                <td>{{ card.employee?.role }}</td>
+              </tr>
+              <tr>
+                <td><strong>Registration Time: </strong></td>
+                <td>{{ card.employee?.registrationTime }}</td>
+              </tr>
+            </table>
+          </div>
+          
+
+        <div class="modal-footer">
+          <button class="btn btn-outline-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>

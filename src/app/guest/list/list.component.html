@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script>
+  // Add a script to initialize wow.js after the DOM is loaded
+  document.addEventListener("DOMContentLoaded", function() {
+    new WOW().init();
+  });
+</script>
+
+
+<div class="container">
+  <div class="pt-5">
+
+    <div class="alert alert-danger" *ngIf="errorMessage">
+      {{errorMessage}}
+    </div>
+
+    <div class="card ">
+      <div class="card-header wow animate__animated animate__fadeInUp">
+        <div class="row">
+
+          <div class="col-6">
+            <h3>Employee List</h3>
+          </div>
+          <div class="col-6 text-end">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="Search Employees" [(ngModel)]="searchQuery" (ngModelChange)="applySearchFilter()" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-body wow animate__animated animate__fadeInUp">
+        <div class="table-responsive">
+          <table class="table table-striped table-bordered table-hover table-custom"> 
+            <thead>
+              <tr>
+                <th scope="col"> </th>
+                <th scope="col">Card ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Surname</th>
+                <th scope="col">Role</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of cardList; index as ind">
+                <th scope="row">{{ind + 1}}</th>
+                <td>{{item.id}}</td>
+                <td>{{item.employee?.name}}</td>
+                <td>{{item.employee?.surname}}</td>
+                <td>{{item.employee?.role}}</td>
+                <td>
+                  <button class="btn btn-outline-success me-3" (click)="editCardRequest(item)">Details</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+</div>
+<app-details [card]="selectedCard" (save)="detailsWatcher($event)"></app-details>
